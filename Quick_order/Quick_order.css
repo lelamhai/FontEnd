@@ -1,0 +1,506 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #f4f7fc;
+}
+div{
+    display: block;
+}
+
+/* -------------------------------------------- */
+.container{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    /* flex: 0 0 100%; */
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    
+}
+.container .tittle h1{
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: 1.75rem;
+}
+
+/* ------------------------------------ */
+.quick-order-and-kart{
+    background-color: #f4f7fc;
+    border-radius: 10px;
+    display: flex;
+}
+/* -------------- Quick order --------------- */
+
+.quick-order{
+    width: 75%;
+}
+
+.search-box{
+    position: sticky;
+}
+
+.input-box{
+    /* position: sticky; */
+    box-shadow: 0px 3px 20px rgb(0 0 0 / 8%);
+    width: 97%;
+    top: 4em;
+    z-index: 100;
+    padding: 10px 10px;
+    display: flex;
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+
+    background-color: white;
+}
+
+.input-box .input-search{
+    /* position: fixed;
+    width: 53%; */
+
+    position: relative;
+    width: 97%;
+
+    padding: 12 16 12 16;
+    border: 1px solid #f9b514;
+    margin: 8px;
+    text-indent: 23px;
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
+
+    z-index: 100;
+}
+
+.input-box .input-search:focus{
+    border: 4px solid #6bcaa7;
+    outline: none;
+    margin: 5px;
+}
+
+.input-box i{
+    /* position: fixed;
+    top: 188px;
+    left: 205px; */
+    z-index: 101;
+
+    position: absolute;  
+    top: 31px;
+    left: 31px;
+
+    color: #00b46e;
+}
+
+.list-item {
+    box-shadow: 0px 3px 20px rgb(0 0 0 / 8%);
+    background-color: white;
+    width: 97%;;
+    border-bottom: 1px solid rgba(195,204,220,0.4);
+    border-left: 2px solid transparent;
+}
+
+.list-item-row{
+    width: 100%;
+    align-items: center !important;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.75em 1em;
+    border-bottom: 1px solid rgba(195,204,220,0.4);
+    border-left: 2px solid transparent;
+    
+}
+
+.list-item-row:active{
+    border: 1px solid #f9b514;
+}
+
+.list-item-row:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+.list-item-row div{
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+.sample-img img{
+    /* max-width: 8.3333333333%; */
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    border-style: none;
+}
+
+    /* information */
+.information{
+    width: 50%;
+}
+
+.name a{  
+    padding-left: 4px;
+    color: #343a40;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+.category ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.category ul li{
+    /* cursor: pointer; */
+    float: left;
+    font-weight: 600;
+    font-size: 75%;
+
+    padding-left: 2px; 
+    padding-right: 2px; 
+
+    line-height: 1;
+    text-align: center;  
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out
+    , border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.category ul li div{
+    border-radius: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 8px;;
+    padding-right: 8px;;
+}
+
+.tag-ban-chay{
+    /* display: none; */
+    color: white;
+    background-color: #00b46e;
+}
+
+.tag-hoa-don-nhanh, .tag-giao-nhanh {
+    color: #00b46e;
+    background-color: #f8f9fa;
+}
+
+    /* information 2 */
+.information2{
+    width: 16%;
+}
+
+.capacity{
+    color: #919aa3;
+    width: 150px;
+    text-align: left;
+}
+
+.capacity small{
+    font-size: 80%;
+}
+
+    /* information 3 */
+.information3{
+    width: 25%;
+    display: flex;
+}
+
+.price{
+    color: #00b46e;
+    font-weight: 550;
+    padding: 3px 5px 3px 5px;
+    min-width: 90px; 
+    width: 130px;
+    text-align: left;
+}
+
+.quantity{
+    height: 25px;
+    width: 100px;
+    display: flex;
+}
+.quantity button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    margin-top: 0px;
+    font-family: inherit;
+    outline: none;
+}
+
+.quantity button i{
+    font-size: 22px;
+    background-color: transparent;
+}
+
+.quantity button i:hover{
+    background-color: none;
+}
+
+.quantity .number{
+    
+    border: 1px solid;
+    border-color: #c3ccdc;
+    border-radius: 5px;
+    padding-top: 5px;
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    color: #f9b514;
+}
+.quantity .number:focus{
+    border: 4px solid #6bcaa7;
+    outline: none;
+    /* outline: 2px solid #70e7bc; */
+}
+
+.minus i{
+    color: #c3ccdc;
+}
+.plus{
+    color: #f9b514;
+}
+
+/* ------------------ Kart --------------------- */
+
+.kart-2nd{
+    display: none;
+}
+
+.kart{
+    width: 20%;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;;
+    border: 1px solid rgb(195 204 220 / 40%);
+    background-color: white;
+    box-shadow: 0px 3px 20px rgb(0 0 0 / 8%);
+}
+.kart > div{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.kart  div  div  b{
+    font-size: 21px;
+} 
+
+.kart .info{
+    width: 35%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgb(195 204 220 / 40%);
+}
+
+.kart .info small{
+    padding: 10px;
+}
+
+.info b{
+    color: #f9b514;
+}
+
+.kart .info-2{
+    width: 65%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.kart .info-2 small{
+    padding: 10px;
+}
+
+.kart .info-2 div{
+    padding-right: 15px;
+}
+
+.info-2 b{
+    color: #00b46e;
+}
+
+.kart .btn-check{
+    height: 45%;
+    border-top: 1px solid rgb(195 204 220 / 40%);;
+}
+
+.kart .btn-check a{
+    width: 90%;
+    height: 60%;
+    color: #212529;
+    background-color: #f9b514;
+    border-color: #f9b514;
+
+    text-decoration: none;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 12px;
+    margin-left: 10px;
+
+    font-weight: 550;
+}
+
+.btn-check > a:hover{
+    background-color: #bba649;
+}
+
+/* -------------------- RESPONSIVE ------------------ */
+
+            /* 769 x 1024 */
+@media only screen and (width: 768px) {
+    
+    .quick-order-and-kart{
+        display: block;
+    }
+
+    .container{
+        padding: 0;
+    }
+
+    /* ----------- Quick order ------- */
+    .input-box .input-search{
+        width: 60%;
+    }
+
+    .list-item-row{
+        min-width: 100%;
+    }
+
+    .container, .quick-order, .input-box, .list-item{
+        width: 100%;
+    }
+
+    .list-item-row .price{
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+
+    .list-item-row .quantity, .minus{
+        padding-left: 0px;
+    }
+
+    .list-item-row .price, .list-item-row .quantity, .plus{
+        padding-right: 0px;
+    }
+
+
+
+    /* ----------- Kart ---------- */
+    .kart{
+        display: none;
+    }
+    
+    .kart-2nd{
+        display: flex;
+        /* flex-direction: row; */
+        width: 40%;
+        height: 50px;
+        align-items: center;
+    }
+
+    .kart-2nd > div{
+        display: flex;
+    }
+
+
+    .input-box{
+        padding: 0;
+        height: 50px;
+    }
+
+    .input-box i{
+        top: 16px;
+        left: 22px;
+    }
+
+    .kart-2nd .info, .kart-2nd .info-2, .kart-2nd .btn-check{
+
+        padding-left: 1px;
+        text-align: left;
+        align-items: center;
+    }
+
+    .kart-2nd .info-2{                
+        display: flex;
+        padding-left: 5px;
+    }
+
+    .kart-2nd .info-2 small{
+        padding: 3px;
+    }
+    
+    .kart-2nd .btn-check{
+        padding-left: 10px;
+    }
+
+    .kart-2nd .btn-check a{
+        color: #212529;
+        background-color: #f9b514;
+        border-color: #f9b514;
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 50px;
+    }
+
+  }
+
+            /* 1024 x 768 */
+@media only screen and (width: 1024px){
+    .container{
+        width: 95%;
+        margin-left: 24px;
+        padding-right: 0px;
+    }
+    .quick-order{
+        padding-right: 5px;
+    }
+
+    .list-item-row{
+        padding-left: 11px;
+    }
+
+    .list-item-row div {
+        padding-left: 2px;
+        padding-right: 0px;
+    }
+
+    .information2{
+        width: 18%;
+    }
+
+    .information3{
+        width: 23%;
+    }
+
+    .information3 .price{
+        min-width: 75px;
+        padding-left: 0px;
+    }
+
+    .information3 .quantity{
+        padding: 0px;
+    }
+
+    .information3 .number{
+        width: 35px;
+    }
+
+    .quantity button:first-child{
+        padding-left: 0px;
+    }
+
+    .kart{
+        width: 22%;
+        height: 150px;
+        margin-left: 5px;
+    }
+}
