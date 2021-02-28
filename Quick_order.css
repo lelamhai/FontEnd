@@ -65,7 +65,7 @@ div{
     position: relative;
     width: 97%;
 
-    padding: 12 16 12 16;
+    padding: 12px 16px 12px 16px;
     border: 1px solid #f9b514;
     margin: 8px;
     text-indent: 23px;
@@ -180,7 +180,7 @@ div{
 }
 
 .DHN-tag-ban-chay{
-    /* display: none; */
+    display: none;
     color: white;
     background-color: #00b46e;
 }
@@ -264,8 +264,13 @@ div{
 .DHN-minus i{
     color: #c3ccdc;
 }
+
 .DHN-plus{
     color: #f9b514;
+}
+
+.DHN-minus i:active, .DHN-plus i:active {
+    color: rgb(219, 219, 111);
 }
 
 /* ------------------ Kart --------------------- */
@@ -523,23 +528,27 @@ div{
     }
 
     .DHN-input-box{
-        min-height: 95px;
+        min-height: 135px;
     }
 
     .DHN-input-box .DHN-input-search{
-        width: 37%;
-        margin: 25px 5px 30px 20px;
+        width: 97%;
+        margin: 25px 5px 5px 5px;
     }
 
     .DHN-input-box .DHN-input-search:focus{
         border: 4px solid #6bcaa7;
         outline: none;
-        margin: 25px 5px 30px 20px;
+        margin: 25px 5px 0px 5px;
+    }
+
+    .DHN-input-box{
+        flex-direction: column;
     }
 
     .DHN-input-box i {
         top: 37px;
-        left: 34px;
+        left: 18px;
     }
 
     .DHN-kart{
@@ -549,22 +558,23 @@ div{
     .DHN-kart-2nd{
         display: flex;
         /* flex-direction: row; */
-        width: 40%;
+        width: 100%;
         height: 50px;
         align-items: center;
     }
 
-    .DHN-kart-2nd div{
+    .DHN-kart-2nd > div{
         display: flex;
+        padding-left: 20px;
     }
 
     .DHN-kart-2nd .DHN-info, .DHN-kart-2nd .DHN-info-2 {
-        padding-top: 40px;
-        padding-right: 5px;
+        padding-top: 5px;
+        padding-right: 10px;
     }
 
     .DHN-kart-2nd .DHN-btn-check{
-        margin-top: 45px;
+        margin-top: 5px;
         margin-left: 2px;
         margin-right: 2px;
         font-weight: 550;
@@ -611,14 +621,14 @@ div{
 @media (max-width: 320px){
 
     .DHN-input-box .DHN-input-search{
-        margin: 25px 5px 30px 5px;
+        margin: 25px 5px 5px 5px;
         text-indent: 20px;
     }
 
     .DHN-input-box .DHN-input-search:focus{
         border: 4px solid #6bcaa7;
         outline: none;
-        margin: 25px 5px 30px 5px;
+        margin: 25px 5px 5px 5px;
     }
 
     .DHN-input-box i {
@@ -627,8 +637,13 @@ div{
     }
 
     .DHN-kart-2nd .DHN-btn-check {
-        padding: 5px 0px 5px 0px;
+        padding: 5px 0px;
+        text-align: center;
     }
     
+    .DHN-kart-2nd .DHN-info, .DHN-kart-2nd .DHN-info-2 {
+        padding-top: 10px;
+        padding-right: 20px;
+    }
     
 }
