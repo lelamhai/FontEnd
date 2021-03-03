@@ -58,11 +58,15 @@ div{
     position: relative;
     padding: 5px;
     margin-bottom: 24px;
-    border-radius: 15px !important;
+    border-radius: 15px;
+}
+
+.GH-instruction{
+    padding-left: 20px;
 }
 
 .GH-instruction p{
-    text-indent: 40px;
+    text-indent: 25px;
     color: #919aa3;
 }
 
@@ -260,16 +264,22 @@ position: relative;
     padding: 10px;
 }
 
+.GH-note {
+    line-height: 2.6;
+}
+
 .GH-note i{
     color: #919aa3;
     line-height: 42px;
-    padding-left: 5px;
+    padding: 0px 5px;
 }
 
 .GH-note a{
     text-decoration: none;
     color: #00b46e;
-    line-height: 45px;
+    line-height: 44px;
+
+    padding-left: 10px;
 }
 
 .GH-note a:hover{
@@ -445,4 +455,290 @@ position: relative;
 
 .GH-right a:hover{
     color: #00683f;
+}
+
+
+/* ---------------------------- POPUP -------------------------- */
+
+/* size: 515 x 345 */
+.GH-popup{
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: .625em;
+    overflow-x: hidden;
+
+    background: rgb(0 0 0 / 40%);
+    transition: background-color .1s;
+}
+
+.GH-popup > div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 100%;
+    width: 515px;
+    height: 345px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    margin: auto;
+    padding: 1.25em;
+
+    font-size: 1rem;
+}
+
+
+.GH-popup-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.8em;
+}
+
+.GH-popup-header .GH-popup-warnning-icon{
+    display: flex;
+    color: #f8bb86;
+    border: .25em solid #facea8;
+
+    position: relative;
+    box-sizing: content-box;
+    justify-content: center;
+    width: 5em;
+    height: 5em;
+    margin: 1.25em auto 1.875em;
+    
+    border-radius: 50%;
+    font-family: inherit;
+    line-height: 5em;
+}
+
+.GH-warnning-content{
+    align-items: center;
+    font-size: 3.75em;
+}
+
+.GH-popup-header h2{
+    position: relative;
+    max-width: 100%;
+    margin: 0 0 .4em;
+    padding: 0;
+    color: #595959;
+    font-size: 1.875em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+}
+
+.GH-popup-header .btn-close{
+    cursor: pointer;
+    position: absolute;
+    outline: none;
+    /* z-index: 2; */
+    top: 0px;
+    right: 0;
+    align-items: center;
+    justify-content: flex-start;
+    width: 1.2em;
+    height: 1.2em;
+    padding: 0;
+    overflow: hidden;
+    transition: color .1s ease-out;
+    border: none;
+    border-radius: 0;
+    background: 0 0;
+    color: #ccc;
+    font-family: serif;
+    font-size: 2.5em;
+    line-height: 1.2;
+}
+
+.btn-close:hover{
+    
+    color: #f27474;
+}
+
+.GH-popup-content{
+    color: #545454;
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    
+    padding: 0 1.6em;
+}
+
+.GH-popup-action{
+    display: flex;
+    /* z-index: 1; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1.25em auto 0;
+}
+
+.GH-popup-action button{
+    cursor: pointer;
+    font-weight: 500;
+
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid;
+    outline: none;
+    margin: 0.5rem;
+    padding: 0.375rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 50px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-no{
+    color: #00b46e;
+    border-color: #00b46e;
+    background-color: transparent;
+}
+
+
+.btn-yes{
+    color: #fff;
+    background-color: #00b46e;
+    border-color: #00b46e;
+}
+
+.btn-no:hover{
+    color: white;
+    background-color: #00b46e;
+    border-color: #00b46e;
+}
+
+.btn-yes:hover{
+    background-color: #008e57;
+    border-color: #00814f;
+}
+
+/* -------------------- RESPONSIVE ------------------ */
+
+@media screen and (max-width:768px){
+
+    .GH-container{
+        width: 100%;
+    }
+
+    .GH-left{
+        width: 77%;
+    }
+
+    .GH-right{
+        width: 24%;
+    }
+
+    .GH-list-item-row{
+        
+    }
+
+    .GH-information {
+        width: 37%;
+    }
+
+    .GH-information2 {
+        width: 28%;
+        display: flex;
+    }
+
+    .GH-list-item-row .GH-star-circle{
+        top: 35px;
+    }
+
+    .GH-note {
+        line-height: 2.6;
+        padding: 5px 10px 20px 15px;
+        display: inline-block;
+    }
+    
+    .GH-note i{
+        color: #919aa3;
+        line-height: 42px;
+        padding: 0px 0px;
+    }
+    
+    .GH-note a{
+        text-decoration: none;
+        color: #00b46e;
+        line-height: 5px;
+    
+        padding-left: 5px;
+        margin-bottom: 10px;
+    }
+
+
+    .GH-note-2 .GH-btn-purchase {
+        padding-left: 225px;
+    }
+
+    .GH-kart {
+        height: 255px;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+
+    .GH-kart > div {
+        height: 60%;
+    }
+
+    .GH-kart div:first-child{
+        flex-direction: column;
+    }
+
+    .GH-kart div .GH-info b, .GH-kart div .GH-info-2 div {
+        padding-bottom: 2px;
+    }
+
+    .GH-kart .GH-info, .GH-kart .GH-info-2{
+        padding: 5px;
+        border-right: none;       
+        width: 100%;
+    }
+
+    .GH-kart .GH-info-2 {
+        border-top: 1px solid #ced4da;
+        border-bottom: 1px solid #ced4da;
+        text-align: center;
+    }
+
+    .GH-kart .GH-info-2 div {
+        padding: 0px;
+    }
+
+    .GH-kart .GH-btn-check {
+        height: 100px;
+        width: 100%;
+        border-top:none;
+    }
+
+    .GH-kart .GH-btn-check a{
+        height: 75%;
+        line-height: 1.5;
+        font-size: 18px;
+
+        padding-top: 12px;
+        margin-left: 8px;
+    }
+
+    .GH-right a {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    
+
 }
