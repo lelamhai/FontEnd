@@ -10,7 +10,7 @@ div{
 }
 
 /* -------------------------------------------- */
-.DHN-container{
+.container{
     padding-top: 3rem;
     padding-bottom: 3rem;
     /* flex: 0 0 100%; */
@@ -22,29 +22,29 @@ div{
     position: relative;
     
 }
-.DHN-container .DHN-tittle h1{
+.container .tittle h1{
     font-weight: 600;
     line-height: 1.2;
     font-size: 1.75rem;
 }
 
 /* ------------------------------------ */
-.DHN-quick-order-and-kart{
+.quick-order-and-kart{
     background-color: #f4f7fc;
     border-radius: 10px;
     display: flex;
 }
 /* -------------- Quick order --------------- */
 
-.DHN-quick-order{
+.quick-order{
     width: 75%;
 }
 
-.DHN-search-box{
+.search-box{
     position: sticky;
 }
 
-.DHN-input-box{
+.input-box{
     /* position: sticky; */
     box-shadow: 0px 3px 20px rgb(0 0 0 / 8%);
     width: 97%;
@@ -58,31 +58,30 @@ div{
     background-color: white;
 }
 
-.DHN-input-box .DHN-input-search{
+.input-box .input-search{
     /* position: fixed;
     width: 53%; */
 
     position: relative;
     width: 97%;
 
-    padding: 12px 16px 12px 16px;
+    padding: 12 16 12 16;
     border: 1px solid #f9b514;
     margin: 8px;
     text-indent: 23px;
     border-top-left-radius: 0.25rem !important;
     border-bottom-left-radius: 0.25rem !important;
-    
+
     z-index: 100;
 }
 
-.DHN-input-box .DHN-input-search:focus{
+.input-box .input-search:focus{
     border: 4px solid #6bcaa7;
     outline: none;
     margin: 5px;
-    
 }
 
-.DHN-input-box i{
+.input-box i{
     /* position: fixed;
     top: 188px;
     left: 205px; */
@@ -95,16 +94,15 @@ div{
     color: #00b46e;
 }
 
-.DHN-list-item {
+.list-item {
     box-shadow: 0px 3px 20px rgb(0 0 0 / 8%);
     background-color: white;
     width: 97%;;
     border-bottom: 1px solid rgba(195,204,220,0.4);
     border-left: 2px solid transparent;
-
 }
 
-.DHN-list-item-row{
+.list-item-row{
     width: 100%;
     align-items: center !important;
     display: flex;
@@ -112,26 +110,25 @@ div{
     padding: 0.75em 1em;
     border-bottom: 1px solid rgba(195,204,220,0.4);
     border-left: 2px solid transparent;
-    border: 1px solid transparent;
     
 }
 
-.DHN-list-item-row:active{
+.list-item-row:active{
     border: 1px solid #f9b514;
 }
 
-.DHN-list-item-row:hover{
+.list-item-row:hover{
     background-color: rgb(238, 238, 238);
 }
 
-.DHN-list-item-row div{
+.list-item-row div{
     padding-left: 5px;
     padding-right: 5px;
     
 }
 
-.DHN-sample-img img{
-    /* max-width: 8.DHN-3333333333%; */
+.sample-img img{
+    /* max-width: 8.3333333333%; */
     width: 50px;
     height: 50px;
     vertical-align: middle;
@@ -139,22 +136,22 @@ div{
 }
 
     /* information */
-.DHN-information{
+.information{
     width: 50%;
 }
 
-.DHN-name a{  
+.name a{  
     padding-left: 4px;
     color: #343a40;
     font-weight: 550;
     text-decoration: none;
 }
 
-.DHN-category ul{
+.category ul{
     list-style: none;
     padding-left: 0px;
 }
-.DHN-category ul li{
+.category ul li{
     /* cursor: pointer; */
     float: left;
     font-weight: 600;
@@ -171,7 +168,7 @@ div{
     , border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.DHN-category ul li div{
+.category ul li div{
     border-radius: 3px;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -179,39 +176,39 @@ div{
     padding-right: 8px;;
 }
 
-.DHN-tag-ban-chay{
-    display: none;
+.tag-ban-chay{
+    /* display: none; */
     color: white;
     background-color: #00b46e;
 }
 
-.DHN-tag-hoa-don-nhanh, .DHN-tag-giao-nhanh {
+.tag-hoa-don-nhanh, .tag-giao-nhanh {
     color: #00b46e;
     background-color: #f8f9fa;
 }
 
     /* information 2 */
-.DHN-information2{
+.information2{
     width: 16%;
 }
 
-.DHN-capacity{
+.capacity{
     color: #919aa3;
     width: 150px;
     text-align: left;
 }
 
-.DHN-capacity small{
+.capacity small{
     font-size: 80%;
 }
 
     /* information 3 */
-.DHN-information3{
+.information3{
     width: 25%;
     display: flex;
 }
 
-.DHN-price{
+.price{
     color: #00b46e;
     font-weight: 550;
     padding: 3px 5px 3px 5px;
@@ -220,12 +217,12 @@ div{
     text-align: left;
 }
 
-.DHN-quantity{
+.quantity{
     height: 25px;
     width: 100px;
     display: flex;
 }
-.DHN-quantity button{
+.quantity button{
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -234,19 +231,19 @@ div{
     outline: none;
 }
 
-.DHN-quantity button i{
+.quantity button i{
     font-size: 22px;
     background-color: transparent;
 }
 
-.DHN-quantity button i:hover{
+.quantity button i:hover{
     background-color: none;
 }
 
-.DHN-quantity .DHN-number{
+.quantity .number{
     
-    border: 1px solid #c3ccdc;
-
+    border: 1px solid;
+    border-color: #c3ccdc;
     border-radius: 5px;
     padding-top: 5px;
     width: 40px;
@@ -254,32 +251,26 @@ div{
     text-align: center;
     color: #f9b514;
 }
-.DHN-quantity .DHN-number:focus{
+.quantity .number:focus{
     border: 4px solid #6bcaa7;
     outline: none;
-    
     /* outline: 2px solid #70e7bc; */
 }
 
-.DHN-minus i{
+.minus i{
     color: #c3ccdc;
 }
-
-.DHN-plus{
+.plus{
     color: #f9b514;
-}
-
-.DHN-minus i:active, .DHN-plus i:active {
-    color: rgb(219, 219, 111);
 }
 
 /* ------------------ Kart --------------------- */
 
-.DHN-kart-2nd{
+.kart-2nd{
     display: none;
 }
 
-.DHN-kart{
+.kart{
     width: 20%;
     height: 135px;
     display: flex;
@@ -289,7 +280,7 @@ div{
     background-color: white;
     box-shadow: 0px 3px 20px rgb(0 0 0 / 8%);
 }
-.DHN-kart > div{
+.kart > div{
     width: 100%;
     height: 55%;
     display: flex;
@@ -297,11 +288,11 @@ div{
 
 }
 
-.DHN-kart  div  div  b{
+.kart  div  div  b{
     font-size: 21px;
 } 
 
-.DHN-kart .DHN-info{
+.kart .info{
     width: 35%;
     text-align: center;
     display: flex;
@@ -309,39 +300,39 @@ div{
     border-right: 1px solid rgb(195 204 220 / 40%);
 }
 
-.DHN-kart .DHN-info small{
+.kart .info small{
     padding: 10px;
 }
 
-.DHN-info b{
+.info b{
     color: #f9b514;
 }
 
-.DHN-kart .DHN-info-2{
+.kart .info-2{
     width: 65%;
     text-align: right;
     display: flex;
     flex-direction: column;
 }
 
-.DHN-kart .DHN-info-2 small{
+.kart .info-2 small{
     padding: 10px;
 }
 
-.DHN-kart .DHN-info-2 div{
+.kart .info-2 div{
     padding-right: 15px;
 }
 
-.DHN-info-2 b{
+.info-2 b{
     color: #00b46e;
 }
 
-.DHN-kart .DHN-btn-check{
+.kart .btn-check{
     height: 45%;
     border-top: 1px solid rgb(195 204 220 / 40%);;
 }
 
-.DHN-kart .DHN-btn-check a{
+.kart .btn-check a{
     width: 90%;
     height: 60%;
     color: #212529;
@@ -358,57 +349,57 @@ div{
     font-weight: 550;
 }
 
-.DHN-btn-check > a:hover{
+.btn-check > a:hover{
     background-color: #bba649;
 }
 
 /* -------------------- RESPONSIVE ------------------ */
 
-            /* 768 x 1024 */
-@media screen and (max-width: 768px)  {
+            /* 769 x 1024 */
+@media only screen and (width: 768px) {
     
-    .DHN-quick-order-and-kart{
+    .quick-order-and-kart{
         display: block;
     }
 
-    .DHN-container{
+    .container{
         padding: 0;
     }
 
     /* ----------- Quick order ------- */
-    .DHN-input-box .DHN-input-search{
+    .input-box .input-search{
         width: 60%;
     }
 
-    .DHN-list-item-row{
+    .list-item-row{
         min-width: 100%;
     }
 
-    .DHN-container, .DHN-quick-order, .DHN-input-box, .DHN-list-item{
+    .container, .quick-order, .input-box, .list-item{
         width: 100%;
     }
 
-    .DHN-list-item-row .DHN-price{
+    .list-item-row .price{
         padding-left: 10px;
         padding-right: 0px;
     }
 
-    .DHN-list-item-row .DHN-quantity, .DHN-minus{
+    .list-item-row .quantity, .minus{
         padding-left: 0px;
     }
 
-    .DHN-list-item-row .DHN-price, .DHN-list-item-row .DHN-quantity, .DHN-plus{
+    .list-item-row .price, .list-item-row .quantity, .plus{
         padding-right: 0px;
     }
 
 
 
     /* ----------- Kart ---------- */
-    .DHN-kart{
+    .kart{
         display: none;
     }
     
-    .DHN-kart-2nd{
+    .kart-2nd{
         display: flex;
         /* flex-direction: row; */
         width: 40%;
@@ -416,42 +407,42 @@ div{
         align-items: center;
     }
 
-    .DHN-kart-2nd > div{
+    .kart-2nd > div{
         display: flex;
     }
 
 
-    .DHN-input-box{
+    .input-box{
         padding: 0;
         height: 50px;
     }
 
-    .DHN-input-box i{
+    .input-box i{
         top: 16px;
         left: 22px;
     }
 
-    .DHN-kart-2nd .DHN-info, .DHN-kart-2nd .DHN-info-2, .DHN-kart-2nd .DHN-btn-check{
+    .kart-2nd .info, .kart-2nd .info-2, .kart-2nd .btn-check{
 
         padding-left: 1px;
         text-align: left;
         align-items: center;
     }
 
-    .DHN-kart-2nd .DHN-info-2{                
+    .kart-2nd .info-2{                
         display: flex;
         padding-left: 5px;
     }
 
-    .DHN-kart-2nd .DHN-info-2 small{
+    .kart-2nd .info-2 small{
         padding: 3px;
     }
     
-    .DHN-kart-2nd .DHN-btn-check{
+    .kart-2nd .btn-check{
         padding-left: 10px;
     }
 
-    .DHN-kart-2nd .DHN-btn-check a{
+    .kart-2nd .btn-check a{
         color: #212529;
         background-color: #f9b514;
         border-color: #f9b514;
@@ -459,191 +450,57 @@ div{
         padding: 5px;
         border-radius: 50px;
     }
-
 
   }
 
             /* 1024 x 768 */
-@media (min-width: 800px) and (max-width: 1024px){
-    .DHN-container{
+@media only screen and (width: 1024px){
+    .container{
         width: 95%;
         margin-left: 24px;
         padding-right: 0px;
     }
-    .DHN-quick-order{
+    .quick-order{
         padding-right: 5px;
     }
 
-    .DHN-list-item-row{
+    .list-item-row{
         padding-left: 11px;
     }
 
-    .DHN-list-item-row div {
+    .list-item-row div {
         padding-left: 2px;
         padding-right: 0px;
     }
 
-    .DHN-information2{
+    .information2{
         width: 18%;
     }
 
-    .DHN-information3{
+    .information3{
         width: 23%;
     }
 
-    .DHN-information3 .DHN-price{
+    .information3 .price{
         min-width: 75px;
         padding-left: 0px;
     }
 
-    .DHN-information3 .DHN-quantity{
+    .information3 .quantity{
         padding: 0px;
     }
 
-    .DHN-information3 .DHN-number{
+    .information3 .number{
         width: 35px;
     }
 
-    .DHN-quantity button:first-child{
+    .quantity button:first-child{
         padding-left: 0px;
     }
 
-    .DHN-kart{
+    .kart{
         width: 22%;
         height: 150px;
         margin-left: 5px;
     }
-}
-
-            /* iphone X  */
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    .DHN-container{
-        width: 100%;
-        padding: 10px;
-
-    }
-
-    .DHN-quick-order{
-        width: 100%;
-    }
-
-    .DHN-input-box{
-        min-height: 135px;
-    }
-
-    .DHN-input-box .DHN-input-search{
-        width: 97%;
-        margin: 25px 5px 5px 5px;
-    }
-
-    .DHN-input-box .DHN-input-search:focus{
-        border: 4px solid #6bcaa7;
-        outline: none;
-        margin: 25px 5px 0px 5px;
-    }
-
-    .DHN-input-box{
-        flex-direction: column;
-    }
-
-    .DHN-input-box i {
-        top: 37px;
-        left: 18px;
-    }
-
-    .DHN-kart{
-        display: none;
-    }
-    
-    .DHN-kart-2nd{
-        display: flex;
-        /* flex-direction: row; */
-        width: 100%;
-        height: 50px;
-        align-items: center;
-    }
-
-    .DHN-kart-2nd > div{
-        display: flex;
-        padding-left: 20px;
-    }
-
-    .DHN-kart-2nd .DHN-info, .DHN-kart-2nd .DHN-info-2 {
-        padding-top: 5px;
-        padding-right: 10px;
-    }
-
-    .DHN-kart-2nd .DHN-btn-check{
-        margin-top: 5px;
-        margin-left: 2px;
-        margin-right: 2px;
-        font-weight: 550;
-        color: #212529;
-        background-color: #f9b514;
-        border-color: #f9b514;
-        text-decoration: none;
-        padding: 5px 2px 5px 2px;
-        border-radius: 50px;
-    }
-
-    .DHN-list-item-row {
-        flex-direction: column;
-        padding: 5px;
-    }
-
-    .DHN-list-item-row div {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-    .DHN-information, .DHN-information2 , .DHN-information3, .DHN-capacity{
-        width: 100%;
-    }
-
-    .DHN-information2 , .DHN-information3{
-        padding-top: 10px;
-    }
-
-    .DHN-information .DHN-name{
-        text-align: center;
-    }
-
-    .DHN-information2 .DHN-capacity small{
-        display: block;
-        text-align: center;
-    }
-
-    .DHN-information3 .DHN-price, .DHN-information3 .DHN-quantity{
-        padding-left: 45px;
-    }
-}
-            /* iphone 5 */
-@media (max-width: 320px){
-
-    .DHN-input-box .DHN-input-search{
-        margin: 25px 5px 5px 5px;
-        text-indent: 20px;
-    }
-
-    .DHN-input-box .DHN-input-search:focus{
-        border: 4px solid #6bcaa7;
-        outline: none;
-        margin: 25px 5px 5px 5px;
-    }
-
-    .DHN-input-box i {
-        top: 37px;
-        left: 16px;
-    }
-
-    .DHN-kart-2nd .DHN-btn-check {
-        padding: 5px 0px;
-        text-align: center;
-    }
-    
-    .DHN-kart-2nd .DHN-info, .DHN-kart-2nd .DHN-info-2 {
-        padding-top: 10px;
-        padding-right: 20px;
-    }
-    
 }
