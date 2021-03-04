@@ -329,14 +329,14 @@ position: relative;
 }
 
 
-.GH-note-2 .GH-btn-purchase{
+.GH-note-2 .GH-btn-update-note{
     padding-left: 650px;
     margin: 20px 5px 15px 5px;
     width: 100%;
     height: 60%;
 }
 
-.GH-note-2 .GH-btn-purchase a{
+.GH-note-2 .GH-btn-update-note a{
     width: 90%;
     height: 60%;
     color: #212529;
@@ -351,7 +351,7 @@ position: relative;
     font-weight: 550;
 }
 
-.GH-btn-purchase > a:hover{
+.GH-btn-update-note > a:hover{
     background-color: #bba649;
 }
 /* ------------------ Kart --------------------- */
@@ -450,7 +450,8 @@ position: relative;
 .GH-right a{
     color: #00b46e;
     text-decoration: none;
-    background-color: transparent
+    background-color: transparent;
+    padding-bottom: 20px;
 }
 
 .GH-right a:hover{
@@ -681,12 +682,12 @@ position: relative;
     }
 
 
-    .GH-note-2 .GH-btn-purchase {
+    .GH-note-2 .GH-btn-update-note {
         padding-left: 225px;
     }
 
     .GH-kart {
-        height: 255px;
+        height: auto;
         padding: 0px;
         margin-bottom: 0px;
     }
@@ -740,5 +741,69 @@ position: relative;
         margin-top: 20px;
     }
     
+
+}
+
+@media screen and (max-width: 440px){
+    .GH-content{
+        flex-direction: column-reverse;
+        
+    }
+    .GH-instruction, .GH-left, .GH-right, .GH-list-item, .GH-information, 
+    .GH-note,.GH-note-2, .GH-capacity, .GH-price, .GH-quantity{
+
+        width: 100%;
+    }
+
+    .GH-information, .GH-capacity, .GH-price, .GH-quantity{
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .GH-information2 {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .GH-list-item-row {
+        flex-direction: column;
+    }
+
+    .GH-list-item-row .GH-star-circle {
+        top: 80px;
+    }
+
+    .GH-quantity{
+        display: inline-block;
+    }
+
+    .GH-note {
+        line-height: 0;
+    }
+
+    .GH-note-2 .GH-btn-update-note{
+        display: flex;
+        padding-left: 0px;
+    }
+
+    .GH-note-2 .GH-btn-update-note a{
+        width: 95%;
+    }
+
+    /* .GH-btn-check{
+        flex-basis: 20%;
+    } */
+
+    .GH-kart .GH-btn-check {
+        display: flex;
+        height: auto;
+        align-content: center;
+    }
+
+    .GH-kart .GH-btn-check a{
+        margin-top: 21px;
+        margin-left: 17px;
+    }
 
 }
