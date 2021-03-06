@@ -1,225 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
   <head>
-    <title>NhanDz</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script src="js/main.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- css files -->
+    <link rel="stylesheet" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/sign-up.css" />
     <link
       rel="stylesheet"
-      href="css/font-awesome.css"
-      type="text/css"
-      media="all"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     />
-    <!-- Style-CSS -->
-    <link rel="stylesheet" href="css/register.css" type="text/css" media="all" />
-    <!-- Style-CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-    <!-- //css files -->
-    <!-- web-fonts -->
-    <link
-      href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700"
-      rel="stylesheet"
-    />
-    <link
-      href="//fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700"
-      rel="stylesheet"
-    />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script
+      src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 
-    <!-- //web-fonts -->
+    <script src="js/log.js"></script>
+    <link rel="stylesheet" href="css/log-in.css">
+    <style>
+      label.error {
+        color: red;
+        display: block;
+        padding-top: 5px;
+        z-index: 1;
+      }
+    </style>
   </head>
-
   <body>
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-toggle="modal"
-      data-target="#exampleModal"
-    >
-      Đăng Nhập
-    </button>
-
-    <!-- Modal -->
-    <div
-      class="modal"
-      id="exampleModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-      style="padding-right: 17px"
-      aria-modal="true"
-      data-controller="modal"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Tạo Tài Khoản</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-              onclick="clearText()"
-            >
-              <span aria-hidden="true"><i class="fa fa-times"></i></span>
-            </button>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <header>
+      <button class="show-form">Mở Form</button>
+    </header>
+    <main>
+      <nav class="form-sign-up">
+        <div class="container-form">
+          <div class="title-form">
+            <h4>Đăng Nhập</h4>
+            <button id="close-sign-up">X</button>
           </div>
-          <div class="modal-body">
-            <form
-              class="new_account"
-              id="new_account"
-              data-controller="authentication"
-              action="#"
-              accept-charset="UTF-8"
-              method="post"
-              autocomplete="off"
-              onsubmit="return validatEemail();"
-            >
-              <div class="input-group form__input-group mb-4">
-                <div class="icon-w3">
-                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                </div>
-                <input
-                  id="eamil"
-                  class="form-control"
-                  placeholder="Nhập email"
-                  name="email"
-                  type="text"
-                  autocomplete="off"
-                  required
-                />
-              </div>
-              <div class="input-group form__input-group mb-3">
-                <div class="icon-w3">
-                  <i class="fa fa-unlock-alt" aria-hidden="true"></i>
-                </div>
-                <div class="form__password" data-controller="password">
-                  <input
-                    id="account_password"
-                    class="form-control"
-                    name="password"
-                    placeholder="Nhập mật khẩu"
-                    aria-label="Password"
-                    autocomplete="off"
-                    type="password"
-                    required
-                  />
 
-                  <input
-                    type="checkbox"
-                    name="show_password"
-                    id="0.01387416949189812"
-                    value="0"
-                    class="form__password-checkbox"
-                    data-target="password.checkbox"
-                    data-action="password#togglePassword"
-                    onclick="showHidden()"
-                  />
-                  <label class="form__password-label" for="0.01387416949189812">
-                    <span class="form__password- label-show" id="iconhien"
-                      ><i class="fa fa-eye mr-1"></i
-                    ></span>
-                    <span class="form__password-label-hide" id="iconan">
-                      <i class="fa fa-eye-slash mr-1"></i
-                    ></span>
-                  </label>
-                </div>
+          <div class="form-acc">
+            <form action="#" id="myform" method="GET">
+              <div class="item-form">
+                <i class="fas fa-envelope"></i>
+                <input name="email" id="email" placeholder="Nhập email" />
               </div>
-			  <div class="input-group form__input-group mb-4">
-                <select id="cars" name="cars" class="select-css">
-                  <option value="nguoitieudung" selected>
-                    Người Tiêu Dùng
-                  </option>
-                  <option value="boss">Nhà Thuốc</option>
-                </select>
-              </div>
-              <div class="input-group form__input-group mb-4">
-                <div class="icon-w3">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                </div>
+              <div class="item-form">
+                <i class="fas fa-lock"></i>
                 <input
-                  id="name"
-                  class="form-control"
-                  placeholder="Nhập Họ Và Tên"
-                  name="name"
-                  type="text"
-                  autocomplete="off"
-                  required
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Nhập mật khẩu"
                 />
-              </div>
-              <div class="input-group form__input-group mb-4">
-                <div class="icon-w3">
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-                </div>
-                <input
-                  id="sdt"
-                  class="form-control"
-                  placeholder="Nhập SĐT"
-                  name="sdt"
-                  type="text"
-                  autocomplete="off"
-                  required
-                />
-              </div>
-              <div class="input-group form__input-group mb-4">
-                <div class="icon-w3">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                </div>
-                <input
-                  id="diachi"
-                  class="form-control"
-                  placeholder="Nhập Điạ Chỉ"
-                  name="diachi"
-                  type="text"
-                  autocomplete="off"
-                  required
-                />
+                <i class="fas fa-eye pass-icon" id="show-pass"></i>
+                <i
+                  class="fas fa-eye-slash pass-icon"
+                  id="hide-pass"
+                  style="display: none"
+                ></i>
               </div>
 
-              <div class="form-group align-self-start">
-                <div class="custom-control custom-checkbox mt-2">
+              <div class="item-form">
+                <label
+                  for="check-remem"
+                  id="container-check-bnt"
+                  class="contain-check-bnt"
+                >
                   <input
                     type="checkbox"
-                    name="remember_password"
-                    id="remember_password"
-                    value="1"
-                    class="custom-control-input"
-                    checked="checked"
-                    onclick="showCheckbox()"
+                    id="check-remem"
                   />
-                  <label class="custom-control-label1" for="remember_dieukhoan"
-                    ><span class="text-capitalize1"
-					>Tôi đã đọc và đồng ý với
-					<a
-					  class="text-secondary1 ml1-1"
-					  data-modal="true"
-					  href="/authentications/signup"
-					  ><b>điều khoản sử dụng</b></a
-					>.</span
-				  >
-                </div>
+                  <span id="text-notify">Nhớ mật khẩu </span>
+                  <a href="#" class="forgot-pass">Quên mật khẩu</a>
+                </label>
               </div>
-			  <span class="text-capitalize"
-			  >nếu bạn có tài khoản,vui lòng
-			  <a
-				class="text-secondary ml-1"
-				data-modal="true"
-				href="/authentications/signup"
-				><b> đăng nhập</b></a
-			  >.</span
-			>
-              <button class="btn btn-gradient btn-block mb-5" type="submit">
-                Đăng nhập
-              </button>
+
+              <div class="item-form">
+                <button id="btn-submit">Đăng Nhập</button>
+              </div>
+              <p class="go-log">
+                Để Nhận Ưu Đãi Hấp Dẫn,<a href="#"> Đăng Ký Thành Viên</a>.
+              </p>
             </form>
           </div>
         </div>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      </nav>
+    </main>
+    <script src="" async defer></script>
   </body>
 </html>
