@@ -1,0 +1,26 @@
+.form-acc form{
+    padding-bottom: unset;
+    padding: 15px 15px;
+
+}
+
+.forgot-pass{
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+    color: #00b46e;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 13px;
+}
+
+.forgot-pass:hover{
+    color: #00683f;
+}
+
+
+.go-log{
+    margin-top: 15px;
+    font-size: 13px;
+    text-align: center;
+}

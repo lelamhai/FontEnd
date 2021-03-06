@@ -1,0 +1,38 @@
+.modal-content{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #f4f7fc;
+    border-radius: 1.25em;
+    height: auto;
+}
+
+.contain-check-bnt{
+    width: 100%;
+    max-width: unset;
+}
+
+.item-form > input, .item-form > textarea{
+    font-size: 1.3em;
+}
+
+.title-form{
+    padding: unset;
+    border: none;
+    padding: 0px 20px;
+}
+
+.title-form h4{
+    font-weight: 600;
+}
+
+.close {
+    font-size: 38px;
+    opacity: 0.7;
+}
+
+.close:hover{
+    color: #000;
+}
+
+.item-form > .special-i{
+    top: 34px;
+}
