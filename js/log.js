@@ -72,6 +72,10 @@ $(document).ready(function () {
       });
     }
   });
+
+  // bật tắt password
+
+  // đăng kí
   $("#show-pass").click(function () {
     $("#password").attr("type", "text");
     $("#hide-pass").css("display", "unset");
@@ -79,6 +83,15 @@ $(document).ready(function () {
   $("#hide-pass").click(function () {
     $("#password").attr("type", "password");
     $("#hide-pass").css("display", "none");
+  });
+// đăng nhập
+  $("#show-pass-s").click(function () {
+    $("#password-s").attr("type", "text");
+    $("#hide-pass-s").css("display", "unset");
+  });
+  $("#hide-pass-s").click(function () {
+    $("#password-s").attr("type", "password");
+    $("#hide-pass-s").css("display", "none");
   });
 
   // validate của form đăng nhập
