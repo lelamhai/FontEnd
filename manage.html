@@ -16,6 +16,7 @@
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     />
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="js/manage.js"></script>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -110,14 +111,14 @@
                 <p>anh quang dz1</p>
               </td>
               <td class="customer">
-                <p><i class="fas fa-user" id="show-popup"></i></p>
+                <p><i class="fas fa-user show-popup"></i></p>
                 <div class="container-customer">
                   <div class="title-container">
                     <h5>Thông Tin User</h5>
-                    <button class="btn-close" id="close-popup">×</button>
+                    <button class="btn-close close-popup">×</button>
                   </div>
                   <div class="info-customer">
-                    <p>Tên: <span>quang</span></p>
+                    <p>Tên: <span>quang11</span></p>
                     <p>Gmail: <span>quangklynk@gmail.com</span></p>
                     <p>Số điện thoại: <span>0775195882</span></p>
                     <p>
@@ -199,7 +200,89 @@
                     <button class="btn-close close-popup">×</button>
                   </div>
                   <div class="info-customer">
-                    <p>Tên: <span>quang</span></p>
+                    <p>Tên: <span>quang2</span></p>
+                    <p>Gmail: <span>quangklynk@gmail.com</span></p>
+                    <p>Số điện thoại: <span>0775195882</span></p>
+                    <p>
+                      Địa chỉ:
+                      <span
+                        >akshdiuashdooasdhdouhgasoudyhoaushgdgasodgasougdoausg</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table class="product">
+                  <tr>
+                    <td>
+                      <p>quangdzdz</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>quangdzdz</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>quangdzdz</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table class="product">
+                  <tr>
+                    <td>
+                      <p>quangdzdz</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>quangdzdz</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>quangdzdz</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table class="product">
+                  <tr>
+                    <td>
+                      <p>quangdzdz</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>quangdzdz</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>quangdzdz</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <p>anh quang dz1</p>
+              </td>
+              <td class="customer">
+                <p><i class="fas fa-user show-popup"></i></p>
+                <div class="container-customer">
+                  <div class="title-container">
+                    <h5>Thông Tin User</h5>
+                    <button class="btn-close close-popup">×</button>
+                  </div>
+                  <div class="info-customer">
+                    <p>Tên: <span>quang2</span></p>
                     <p>Gmail: <span>quangklynk@gmail.com</span></p>
                     <p>Số điện thoại: <span>0775195882</span></p>
                     <p>
@@ -216,26 +299,6 @@
         </table>
       </div>
     </main>
-
-    <script>
-      $(document).ready(function () {
-        var active_star;
-        var inside_star;
-        $(".customer").click(function () {
-          active_star = $(this);
-          inside_star = active_star.find(".container-customer");
-          console.log(inside_star);
-          $(inside_star).css("display", "unset");
-        });
-        $(".close-popup").click(function () {
-          active_star = $(this);
-          inside_star = active_star.closest(".container-customer");
-          console.log(inside_star);
-          $(inside_star).css("display", "none");
-        });
-      });
-    </script>
-
     <script src="" async defer></script>
   </body>
 </html>
